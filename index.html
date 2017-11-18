@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gem Collector</title>
+    <!-- jQuery Link -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap Link -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- CSS Link -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<!-- Header Panel -->
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1 class="panel-title; text-center">The Gem Collector</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <p>1. You will be given a random number at the start of the game.</p>
+            <p>2. There are four gems below. By clicking on a gem you will add points to your total score.</p>
+            <p>3. You win the game by matching your total score to a random number provided, you will lose the game if your total score goes above the random number.</p>
+            <p>4. The value of each gem is hidden from you until you click on it.</p>
+            <p>5. Each time when the game starts, the game will change the values of the gems.</p>
+            <p>GOOD LUCK!</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title; text-center">Random Number</h3>
+                    </div>
+                    <div class="panel-body; text-center">
+                        <div class="random" id="randomNum"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title; text-center">Wins</h3>
+                    </div>
+                    <div class="panel-body; text-center">
+                        <span id="winsScore"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title; text-center">Loses</h3>
+                    </div>
+                    <div class="panel-body; text-center">
+                        <span id="losesScore"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title; text-center">Gems</h2>
+                    </div>
+                        <div class="panel-body; text-center">
+                            <img src="assets/images/green.png" id="green" style="width:150px;height:150px;" ">
+                            <img src="assets/images/red.png " id="red" style="width:150px;height:150px; "">
+                            <img src="assets/images/blue.jpg" id="blue" style="width:150px;height:150px;" ">
+                            <img src="assets/images/diamond.png " id="diamond" style="width:150px;height:150px; "">
+                        </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title; text-center">Your Score</h2>
+                        </div>
+                            <div class="panel-body; text-center">
+                                <span id="totalScore"></span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+body {
+  font-family: Georgia;
+  font-size: 24px;
+  margin:10px;
+  color: #777;
+  line-height: 34px;
+  background-size: 100%;
+  background-color: grey;
+
+}
+.jumbotron {
+	background-color: black;
+	color: grey;
+}
